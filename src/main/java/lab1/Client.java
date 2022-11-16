@@ -14,7 +14,7 @@ public class Client extends Human{
         orderId = builder.orderId;
     }
     /**
-     * Set patient phone number
+     * Set client phone number
      *
      * @param phoneNumber phone number
      */
@@ -23,28 +23,28 @@ public class Client extends Human{
     }
 
     /**
-     * @return patient phone number
+     * @return client phone number
      */
     public String getPhoneNumber(){
         return phoneNumber;
     }
 
     /**
-     * @return medical card id
+     * @return order id
      */
     public int getOrderIdId(){
         return orderId;
     }
 
     /**
-     * Build instance of Patient
+     * Build instance of Client
      */
     public static class Builder extends Human.Builder{
         protected String phoneNumber;
         protected int orderId;
 
         /**
-         * Check number and set it as patient phone number
+         * Check number and set it as client phone number
          *
          * @param phoneNumber phone number
          * @return Builder instance
@@ -85,13 +85,13 @@ public class Client extends Human{
             return (Builder) super.setId(id);
         }
 
-        public Client createPatient(){
+        public Client createClient(){
             return new Client(this);
         }
     }
 
     /**
-     * Generate hash code for Patient
+     * Generate hash code for Client
      *
      * @return hash code
      */
@@ -101,9 +101,9 @@ public class Client extends Human{
     }
 
     /**
-     * Generate string from Patient object
+     * Generate string from Client object
      *
-     * @return string representation of Patient
+     * @return string representation of Client
      */
     @Override
     public String toString(){
@@ -112,7 +112,7 @@ public class Client extends Human{
     }
 
     /**
-     * Compare patients objects
+     * Compare clinets objects
      *
      * @param obj object to compare
      * @return are two objects equal

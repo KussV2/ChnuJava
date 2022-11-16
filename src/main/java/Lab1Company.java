@@ -19,13 +19,13 @@ public class Lab1Company {
 
         Client client1 = new Client.Builder().setName("ClientName1").setSurname("ClientSurname1")
                 .setBirthday(LocalDate.of(1999, 12, 5)).setId(66)
-                .setPhoneNumber("+1111111111").setOrderID(951).createPatient();
+                .setPhoneNumber("+1111111111").setOrderID(951).createClient();
         Client client2 = new Client.Builder().setName("ClientName2").setSurname("ClientSurname2")
                 .setBirthday(LocalDate.of(1979, 12, 5)).setId(96)
-                .setPhoneNumber("+1111111111").setOrderID(951).createPatient();
+                .setPhoneNumber("+1111111111").setOrderID(951).createClient();
         Client client3 = new Client.Builder().setName("ClientName3").setSurname("ClientSurname3")
                 .setBirthday(LocalDate.of(1879, 12, 5)).setId(90)
-                .setPhoneNumber("+1111111111").setOrderID(951).createPatient();
+                .setPhoneNumber("+1111111111").setOrderID(951).createClient();
 
         System.out.println(client1.getName());
         System.out.println(client1);
@@ -37,12 +37,12 @@ public class Lab1Company {
         Worker worker1 = new Worker.Builder().setName("WorkerName1").setSurname("WorkerSurname1")
                 .setBirthday(LocalDate.of(1955, 6, 9))
                 .setId(45445).setOfficeNumber(66).setSalary(5453).setPhoneNumber("+1111111111")
-                .setClients(clientList).createDoctor();
+                .setClients(clientList).createWorker();
 
         Worker worker2 = new Worker.Builder().setName("WorkerName2").setSurname("WorkerSurname2")
                 .setBirthday(LocalDate.of(1985, 6, 9))
                 .setId(4445).setOfficeNumber(46).setSalary(553).setPhoneNumber("+1111111111")
-                .setClients(clientList1).createDoctor();
+                .setClients(clientList1).createWorker();
 
         System.out.println(worker1);
 

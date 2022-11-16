@@ -15,59 +15,59 @@ public class OfficeBuilding extends Building{
     }
 
     /**
-     * Set hospital number
+     * Set office building number
      *
-     * @param number hospital number
+     * @param number office building number
      */
     public void setNumber(int number){
         this.number = number;
     }
 
     /**
-     * @return hospital number
+     * @return office building number
      */
     public int getNumber(){
         return number;
     }
 
     /**
-     * Erase doctor from hospital's doctor list
+     * Erase worker from office building's worker list
      *
-     * @param worker doctor whom need to erase
+     * @param worker worker who need to be erased
      */
     public void eraseWorker(Worker worker){
         workers.remove(worker);
     }
 
     /**
-     * Add doctor to hospital's doctor list
+     * Add worker to office building's worker list
      *
-     * @param worker doctor whom need to add
+     * @param worker worker who need to be added
      */
     public void addWorker(Worker worker){
         workers.add(worker);
     }
 
     /**
-     * Add doctors to hospital's doctor list
+     * Add workers to office building's worker list
      *
-     * @param workers doctors whoms need to add
+     * @param workers workers who need to be added
      */
     public void addWorkers(List<Worker> workers){
         this.workers.addAll(workers);
     }
 
     /**
-     * Get all doctors from hospital's doctor list
+     * Get all workers from office building's worker list
      *
-     * @return list of doctors
+     * @return list of workers
      */
     public List<Worker> getAllWorkers(){
         return workers;
     }
 
     /**
-     * Generate hash code for Hospital
+     * Generate hash code for OfficeBuilding
      *
      * @return hash code
      */
@@ -77,9 +77,9 @@ public class OfficeBuilding extends Building{
     }
 
     /**
-     * Generate string from Hospital object
+     * Generate string from OfficeBuilding object
      *
-     * @return string representation of Hospital
+     * @return string representation of OfficeBuilding
      */
     @Override
     public String toString(){
@@ -87,7 +87,7 @@ public class OfficeBuilding extends Building{
     }
 
     /**
-     * Compare hospitals objects
+     * Compare OfficeBuilding objects
      *
      * @param obj object to compare
      * @return are two objects equal

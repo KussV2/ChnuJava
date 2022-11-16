@@ -20,7 +20,7 @@ public class Worker extends Human{
     }
 
     /**
-     * Set doctor phone number
+     * Set worker phone number
      *
      * @param phoneNumber phone number
      */
@@ -36,50 +36,50 @@ public class Worker extends Human{
     }
 
     /**
-     * Add patient to doctor's patient list
+     * Add client to worker's client list
      *
-     * @param client client whom need to add
+     * @param client client who needs to be added
      */
-    public void setPatient(Client client){
+    public void setClient(Client client){
         clients.add(client);
     }
 
     /**
-     * Add patients to doctor's patient list
+     * Add client to worker's client list
      *
-     * @param clients patients whoms need to add
+     * @param clients client who needs to be added
      */
     public void setClients(List<Client> clients){
         this.clients.addAll(clients);
     }
 
     /**
-     * Return all doctor's patient
+     * Return all worker's clients
      *
-     * @return list of doctor's patient
+     * @return list of worker's clients
      */
     public List<Client> getAllClients(){
         return clients;
     }
 
     /**
-     * Set doctor cabinet number
+     * Set worker's office number
      *
-     * @param officeNumber cabinet number
+     * @param officeNumber office number
      */
     public void setOfficeNumber(int officeNumber){
         this.officeNumber = officeNumber;
     }
 
     /**
-     * @return cabinet number
+     * @return office number
      */
     public int getOfficeNumber(){
         return officeNumber;
     }
 
     /**
-     * Set doctor salary
+     * Set worker salary
      *
      * @param salary salary
      */
@@ -88,14 +88,14 @@ public class Worker extends Human{
     }
 
     /**
-     * @return doctor salary
+     * @return worker salary
      */
     public int getSalary(){
         return salary;
     }
 
     /**
-     * Build instance of Doctor
+     * Build instance of Worker
      */
     public static class Builder extends Human.Builder{
         private String phoneNumber;
@@ -104,7 +104,7 @@ public class Worker extends Human{
         private int salary;
 
         /**
-         * Check number and set it as patient phone number
+         * Check number and set it as client phone number
          *
          * @param phoneNumber phone number
          * @return Builder instance
@@ -115,9 +115,9 @@ public class Worker extends Human{
         }
 
         /**
-         * Set list of doctor's patient
+         * Set list of worker's clients
          *
-         * @param clients list of patients
+         * @param clients list of clients
          * @return Builder instance
          */
         public Builder setClients(List<Client> clients){
@@ -126,9 +126,9 @@ public class Worker extends Human{
         }
 
         /**
-         * Check number and set it as doctor cabinet number
+         * Check number and set it as worker's office number
          *
-         * @param officeNumber cabinet number
+         * @param officeNumber office number
          * @return Builder instance
          */
         public Builder setOfficeNumber(int officeNumber){
@@ -137,7 +137,7 @@ public class Worker extends Human{
         }
 
         /**
-         * Check number and set it as doctor salary
+         * Check number and set it as worker salary
          *
          * @param salary salary
          * @return Builder instance
@@ -167,13 +167,13 @@ public class Worker extends Human{
             return (Builder) super.setId(id);
         }
 
-        public Worker createDoctor(){
+        public Worker createWorker(){
             return new Worker(this);
         }
     }
 
     /**
-     * Generate hash code for Doctor
+     * Generate hash code for Worker
      *
      * @return hash code
      */
@@ -183,9 +183,9 @@ public class Worker extends Human{
     }
 
     /**
-     * Generate string from Doctor object
+     * Generate string from Worker object
      *
-     * @return string representation of Doctor
+     * @return string representation of Worker
      */
     @Override
     public String toString(){
@@ -195,7 +195,7 @@ public class Worker extends Human{
     }
 
     /**
-     * Compare doctors objects
+     * Compare workers objects
      *
      * @param obj object to compare
      * @return are two objects equal
