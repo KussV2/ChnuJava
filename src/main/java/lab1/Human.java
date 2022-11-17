@@ -142,7 +142,7 @@ public class Human{
      */
     @Override
     public String toString(){
-        return "{ name: " + name + ", surname: " + surname + ", birthday: " + birthday + ", ID: " + id + " }";
+        return "{name: " + name + ", surname: " + surname + ", birthday: " + birthday + ", ID: " + id + "}";
     }
 
     /**

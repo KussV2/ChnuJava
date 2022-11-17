@@ -189,9 +189,9 @@ public class Worker extends Human{
      */
     @Override
     public String toString(){
-        return "{ name: " + name + ", surname: " + surname + ", birthday: " + birthday + ", ID: " + id + ", phone number: "
+        return "{name: " + name + ", surname: " + surname + ", birthday: " + birthday + ", ID: " + id + ", phone number: "
                 + phoneNumber + ", clients: " + clients + ", office number: " + officeNumber + ", salary: "
-                + salary + " }";
+                + salary + "}";
     }
 
     /**

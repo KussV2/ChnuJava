@@ -83,7 +83,7 @@ public class OfficeBuilding extends Building{
      */
     @Override
     public String toString(){
-        return "{ " + super.toString() + ", number: " + number + ", workers: " + workers + " }";
+        return "{" + super.toString() + ", number: " + number + ", workers: " + workers + "}";
     }
 
     /**

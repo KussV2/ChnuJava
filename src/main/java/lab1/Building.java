@@ -41,7 +41,7 @@ public class Building{
      */
     @Override
     public String toString(){
-        return "{ address: " + address + " }";
+        return "{address: " + address + "}";
     }
 
     /**

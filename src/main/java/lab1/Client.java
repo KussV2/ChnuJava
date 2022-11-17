@@ -32,7 +32,7 @@ public class Client extends Human{
     /**
      * @return order id
      */
-    public int getOrderIdId(){
+    public int getOrderId(){
         return orderId;
     }
 
@@ -107,8 +107,8 @@ public class Client extends Human{
      */
     @Override
     public String toString(){
-        return "{ name: " + name + ", surname: " + surname + ", birthday: " + birthday + ", ID: " + id + ", phone number: "
-                + phoneNumber + ", order id: " + orderId + " }";
+        return "{name: " + name + ", surname: " + surname + ", birthday: " + birthday + ", ID: " + id + ", phone number: "
+                + phoneNumber + ", order id: " + orderId + "}";
     }
 
     /**
