@@ -12,6 +12,7 @@ public class Human{
     public Human(Builder builder){
         this.name = builder.name;
         this.surname = builder.surname;
+
         this.birthday = builder.birthday;
         this.id = builder.id;
     }

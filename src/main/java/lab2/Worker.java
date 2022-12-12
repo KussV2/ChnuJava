@@ -43,7 +43,7 @@ public class Worker extends Human {
     /**
      * Add client to worker's client list
      *
-     * @param client client whom need to add
+     * @param client client who need to be added
      */
     public void setClient(Client client) {
         clients.add(client);
@@ -52,7 +52,7 @@ public class Worker extends Human {
     /**
      * Add clients to worker's client list
      *
-     * @param clients clients whoms need to add
+     * @param clients clients who need to be added
      */
     public void setClient(List<Client> clients) {
         this.clients.addAll(clients);

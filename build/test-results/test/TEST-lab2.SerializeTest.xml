@@ -1,9 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="lab2.SerializeTest" tests="3" skipped="0" failures="0" errors="0" timestamp="2022-11-21T16:16:56" hostname="DESKTOP" time="0.376">
-  <properties/>
-  <testcase name="testJsonSerialization" classname="lab2.SerializeTest" time="0.236"/>
-  <testcase name="testTxtSerialization" classname="lab2.SerializeTest" time="0.03"/>
-  <testcase name="testXmlSerialization" classname="lab2.SerializeTest" time="0.106"/>
-  <system-out><![CDATA[]]></system-out>
-  <system-err><![CDATA[]]></system-err>
-</testsuite>

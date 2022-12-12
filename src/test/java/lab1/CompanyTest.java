@@ -43,7 +43,7 @@ public class CompanyTest {
     }
 
     @Test(dataProvider = "HumanProvider")
-    public void testHumanBuilding(String name, String surname, LocalDate date, int id) {
+    public void testHumanBuild(String name, String surname, LocalDate date, int id) {
         Human human = new Human.Builder().setName(name).setSurname(surname).setBirthday(date).setId(id).createHuman();
         assertEquals(human.getName(), name);
         assertEquals(human.getSurname(), surname);
@@ -101,6 +101,7 @@ public class CompanyTest {
         Client client = new Client.Builder().setName(name).setSurname(surname).setBirthday(date).setId(id)
                 .setPhoneNumber(number).setOrderID(orderId).createClient();
 
+        assertEquals(client.getName(), name);
         assertEquals(client.getName(), name);
         assertEquals(client.getSurname(), surname);
         assertEquals(client.getBirthday(), date);

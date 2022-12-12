@@ -13,8 +13,12 @@ dependencies {
     testImplementation group: 'org.testng', name: 'testng', version: '7.6.1'
     implementation group: 'com.fasterxml.jackson.core', name: 'jackson-databind', version: '2.14.0-rc1'
     implementation 'com.fasterxml.jackson.dataformat:jackson-dataformat-xml:2.13.4'
+    implementation 'javax.validation:validation-api:2.0.1.Final'
+    implementation 'mysql:mysql-connector-java:8.0.30'
 }
 
 test {
     useTestNG()
 }
+sourceCompatibility = JavaVersion.VERSION_15
+targetCompatibility = JavaVersion.VERSION_15

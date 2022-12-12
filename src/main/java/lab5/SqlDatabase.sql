@@ -1,0 +1,44 @@
+CREATE TABLE JavaDB.Building (
+  Id integer NOT NULL AUTO_INCREMENT,
+  Adress varchar(100) NOT NULL,
+  CONSTRAINT ID PRIMARY KEY CLUSTERED (Id)
+);
+
+CREATE TABLE JavaDB.Human (
+  Id integer NOT NULL AUTO_INCREMENT,
+  Name varchar(32) NOT NULL,
+  Surname varchar(32) NOT NULL,
+  Birthday date NOT NULL,
+  CONSTRAINT ID PRIMARY KEY CLUSTERED (Id)
+);
+
+CREATE TABLE JavaDB.OfficeBuilding (
+  Id integer NOT NULL,
+  BuildingId integer NOT NULL,
+  CONSTRAINT Id PRIMARY KEY CLUSTERED (Id),
+  FOREIGN KEY (BuildingId) REFERENCES Building(Id) ON UPDATE CASCADE ON DELETE SET NULL
+);
+
+CREATE TABLE JavaDB.Worker (
+  Id integer NOT NULL AUTO_INCREMENT,
+  HumanId integer NOT NULL,
+  OfficeBuildingId integer NOT NULL,
+  CabinetNumber integer NOT NULL,
+  Salary integer NOT NULL,
+  CONSTRAINT ID PRIMARY KEY CLUSTERED (Id),
+  FOREIGN KEY (HumanId) REFERENCES Human(Id) ON UPDATE CASCADE ON DELETE SET NULL,
+  FOREIGN KEY (OfficeBuildingId) REFERENCES OfficeBuilding(Id) ON UPDATE CASCADE ON DELETE SET NULL
+);
+
+CREATE TABLE JavaDB.Client (
+  Id integer NOT NULL AUTO_INCREMENT,
+  WorkerId integer NOT NULL,
+  HumanId integer NOT NULL,
+  PhoneNumber integer(10) NOT NULL,
+  OrderId integer NOT NULL,
+  CONSTRAINT ID PRIMARY KEY CLUSTERED (Id),
+  FOREIGN KEY (WorkerId) REFERENCES Worker(Id) ON UPDATE CASCADE ON DELETE SET NULL,
+  FOREIGN KEY (HumanId) REFERENCES Human(Id) ON UPDATE CASCADE ON DELETE SET NULL
+);
+
+

@@ -36,7 +36,7 @@ public class Worker extends Human implements Comparable<Worker> {
     /**
      * Erase client from worker's client list
      *
-     * @param client client whom need to erase
+     * @param client client who needs to be erased
      */
     public void eraseClient(Client client) {
         clients.remove(client);
@@ -45,7 +45,7 @@ public class Worker extends Human implements Comparable<Worker> {
     /**
      * Add client to worker's client list
      *
-     * @param client clients who needs to be added
+     * @param client clients who need to be added
      */
     public void setClient(Client client) {
         clients.add(client);
@@ -54,7 +54,7 @@ public class Worker extends Human implements Comparable<Worker> {
     /**
      * Add clients to worker's client list
      *
-     * @param clients clients who needs to be added
+     * @param clients clients who need to be added
      */
     public void setClients(List<Client> clients) {
         this.clients.addAll(clients);
@@ -168,11 +168,7 @@ public class Worker extends Human implements Comparable<Worker> {
         clients.sort(new Comparator<Client>() {
             @Override
             public int compare(Client o1, Client o2) {
-                if (o1.getOrderId() < o2.getOrderId())
-                    return -1;
-                else if (o1.getOrderId() == o2.getOrderId())
-                    return 0;
-                return 1;
+                return o1.getOrderId() - o2.getOrderId();
             }
         });
     }

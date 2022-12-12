@@ -32,7 +32,7 @@ public class OfficeBuilding extends Building{
     /**
      * Erase worker from office building's worker list
      *
-     * @param worker worker whom need to erase
+     * @param worker worker who needs to be added
      */
     public void eraseWorker(Worker worker) {
         workers.remove(worker);
@@ -41,7 +41,7 @@ public class OfficeBuilding extends Building{
     /**
      * Add worker to office building's worker list
      *
-     * @param worker worker whom need to add
+     * @param worker worker who needs to be added
      */
     public void addWorker(Worker worker) {
         workers.add(worker);
@@ -50,7 +50,7 @@ public class OfficeBuilding extends Building{
     /**
      * Add workers to office building's worker list
      *
-     * @param workers workers whoms need to add
+     * @param workers workers who need to be added
      */
     public void addWorkers(List<Worker> workers) {
         this.workers.addAll(workers);
